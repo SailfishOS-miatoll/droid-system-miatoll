@@ -1,0 +1,20 @@
+diff --git a/sparse/system/etc/ld.config.28.txt b/sparse/system/etc/ld.config.28.txt
+index 6f9caee..19c89c1 100644
+--- a/sparse/system/etc/ld.config.28.txt
++++ b/sparse/system/etc/ld.config.28.txt
+@@ -68,6 +68,7 @@ namespace.default.permitted.paths += /system/product/app
+ namespace.default.permitted.paths += /system/product/priv-app
+ namespace.default.permitted.paths += /data
+ namespace.default.permitted.paths += /mnt/expand
++namespace.default.permitted.paths += /usr/libexec/droid-hybris/system/${LIB}
+ 
+ namespace.default.asan.search.paths  = /data/asan/system/${LIB}
+ namespace.default.asan.search.paths +=           /system/${LIB}
+@@ -265,6 +266,7 @@ namespace.default.search.paths += /vendor/${LIB}
+ 
+ namespace.default.permitted.paths  = /odm
+ namespace.default.permitted.paths += /vendor
++namespace.default.permitted.paths += /usr/libexec/droid-hybris/system/${LIB}
+ 
+ namespace.default.asan.search.paths  = /data/asan/odm/${LIB}
+ namespace.default.asan.search.paths +=           /odm/${LIB}

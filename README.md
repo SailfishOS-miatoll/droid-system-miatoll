@@ -13,4 +13,10 @@ sudo mount ~/images/system_ext.img system/system_ext/
 sudo mount ~/images/product.img system/product/
 ```
 5. Run extraction script ```sudo -E ./droid-system-device/helpers/copy_tree.sh ./system/ rpm/droid-system-miatoll.spec``` I had to run it as root due apex partition permissions.
-Because I ran it's as root I also had to pachage it in sfossdk as root and restore zypper db permissions then)
+
+Since I ran it as root, I also had to package it into sfossdk as root and then restore zypper db permissions)
+Restore permissions using
+```
+sudo -E sb2 -t $VENDOR-$DEVICE-$PORT_ARCH -m sdk-install -R chmod 755 /var/lib/rpm/__db.001
+sudo rm /home/antonix/.mb2.lock
+```

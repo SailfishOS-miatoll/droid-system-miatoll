@@ -1,0 +1,191 @@
+From a9ddd1725146dfe773819234dcd27721ceb0727c Mon Sep 17 00:00:00 2001
+From: AntonIX <antonix@devpins.org>
+Date: Thu, 21 Mar 2024 17:52:05 +0200
+Subject: [PATCH] Add required odm libraries
+
+---
+ .../vendor/odm/lib/android.hardware.power-V1-ndk_platform.so     | 1 +
+ sparse/system/vendor/odm/lib/libandroidicu.so                    | 1 +
+ sparse/system/vendor/odm/lib/libaudioroute.so                    | 1 +
+ sparse/system/vendor/odm/lib/libbase.so                          | 1 +
+ sparse/system/vendor/odm/lib/libcutils.so                        | 1 +
+ sparse/system/vendor/odm/lib/libicui18n.so                       | 1 +
+ sparse/system/vendor/odm/lib/libicuuc.so                         | 1 +
+ sparse/system/vendor/odm/lib/libnativehelper.so                  | 1 +
+ sparse/system/vendor/odm/lib/libtinyalsa.so                      | 1 +
+ .../vendor/odm/lib64/android.hardware.power-V1-ndk_platform.so   | 1 +
+ sparse/system/vendor/odm/lib64/libandroidicu.so                  | 1 +
+ sparse/system/vendor/odm/lib64/libaudioroute.so                  | 1 +
+ sparse/system/vendor/odm/lib64/libbase.so                        | 1 +
+ sparse/system/vendor/odm/lib64/libcutils.so                      | 1 +
+ sparse/system/vendor/odm/lib64/libicui18n.so                     | 1 +
+ sparse/system/vendor/odm/lib64/libicuuc.so                       | 1 +
+ sparse/system/vendor/odm/lib64/libnativehelper.so                | 1 +
+ sparse/system/vendor/odm/lib64/libtinyalsa.so                    | 1 +
+ 18 files changed, 18 insertions(+)
+ create mode 120000 sparse/system/vendor/odm/lib/android.hardware.power-V1-ndk_platform.so
+ create mode 120000 sparse/system/vendor/odm/lib/libandroidicu.so
+ create mode 120000 sparse/system/vendor/odm/lib/libaudioroute.so
+ create mode 120000 sparse/system/vendor/odm/lib/libbase.so
+ create mode 120000 sparse/system/vendor/odm/lib/libcutils.so
+ create mode 120000 sparse/system/vendor/odm/lib/libicui18n.so
+ create mode 120000 sparse/system/vendor/odm/lib/libicuuc.so
+ create mode 120000 sparse/system/vendor/odm/lib/libnativehelper.so
+ create mode 120000 sparse/system/vendor/odm/lib/libtinyalsa.so
+ create mode 120000 sparse/system/vendor/odm/lib64/android.hardware.power-V1-ndk_platform.so
+ create mode 120000 sparse/system/vendor/odm/lib64/libandroidicu.so
+ create mode 120000 sparse/system/vendor/odm/lib64/libaudioroute.so
+ create mode 120000 sparse/system/vendor/odm/lib64/libbase.so
+ create mode 120000 sparse/system/vendor/odm/lib64/libcutils.so
+ create mode 120000 sparse/system/vendor/odm/lib64/libicui18n.so
+ create mode 120000 sparse/system/vendor/odm/lib64/libicuuc.so
+ create mode 120000 sparse/system/vendor/odm/lib64/libnativehelper.so
+ create mode 120000 sparse/system/vendor/odm/lib64/libtinyalsa.so
+
+diff --git a/sparse/system/vendor/odm/lib/android.hardware.power-V1-ndk_platform.so b/sparse/system/vendor/odm/lib/android.hardware.power-V1-ndk_platform.so
+new file mode 120000
+index 0000000..7e91bbd
+--- /dev/null
++++ b/sparse/system/vendor/odm/lib/android.hardware.power-V1-ndk_platform.so
+@@ -0,0 +1 @@
++/apex/com.android.vndk.v30/lib/android.hardware.power-V1-ndk_platform.so
+\ No newline at end of file
+diff --git a/sparse/system/vendor/odm/lib/libandroidicu.so b/sparse/system/vendor/odm/lib/libandroidicu.so
+new file mode 120000
+index 0000000..df8ae7e
+--- /dev/null
++++ b/sparse/system/vendor/odm/lib/libandroidicu.so
+@@ -0,0 +1 @@
++/apex/com.android.art/lib/libandroidicu.so
+\ No newline at end of file
+diff --git a/sparse/system/vendor/odm/lib/libaudioroute.so b/sparse/system/vendor/odm/lib/libaudioroute.so
+new file mode 120000
+index 0000000..0059b33
+--- /dev/null
++++ b/sparse/system/vendor/odm/lib/libaudioroute.so
+@@ -0,0 +1 @@
++/apex/com.android.vndk.v30/lib/libaudioroute.so
+\ No newline at end of file
+diff --git a/sparse/system/vendor/odm/lib/libbase.so b/sparse/system/vendor/odm/lib/libbase.so
+new file mode 120000
+index 0000000..380538a
+--- /dev/null
++++ b/sparse/system/vendor/odm/lib/libbase.so
+@@ -0,0 +1 @@
++/apex/com.android.vndk.v30/lib/libbase.so
+\ No newline at end of file
+diff --git a/sparse/system/vendor/odm/lib/libcutils.so b/sparse/system/vendor/odm/lib/libcutils.so
+new file mode 120000
+index 0000000..4a0e6d2
+--- /dev/null
++++ b/sparse/system/vendor/odm/lib/libcutils.so
+@@ -0,0 +1 @@
++/apex/com.android.vndk.v30/lib/libcutils.so
+\ No newline at end of file
+diff --git a/sparse/system/vendor/odm/lib/libicui18n.so b/sparse/system/vendor/odm/lib/libicui18n.so
+new file mode 120000
+index 0000000..1a1cad4
+--- /dev/null
++++ b/sparse/system/vendor/odm/lib/libicui18n.so
+@@ -0,0 +1 @@
++/apex/com.android.art/lib/libicui18n.so
+\ No newline at end of file
+diff --git a/sparse/system/vendor/odm/lib/libicuuc.so b/sparse/system/vendor/odm/lib/libicuuc.so
+new file mode 120000
+index 0000000..c0b9aa1
+--- /dev/null
++++ b/sparse/system/vendor/odm/lib/libicuuc.so
+@@ -0,0 +1 @@
++/apex/com.android.art/lib/libicuuc.so
+\ No newline at end of file
+diff --git a/sparse/system/vendor/odm/lib/libnativehelper.so b/sparse/system/vendor/odm/lib/libnativehelper.so
+new file mode 120000
+index 0000000..24784ad
+--- /dev/null
++++ b/sparse/system/vendor/odm/lib/libnativehelper.so
+@@ -0,0 +1 @@
++/apex/com.android.art/lib/libnativehelper.so
+\ No newline at end of file
+diff --git a/sparse/system/vendor/odm/lib/libtinyalsa.so b/sparse/system/vendor/odm/lib/libtinyalsa.so
+new file mode 120000
+index 0000000..cdf2191
+--- /dev/null
++++ b/sparse/system/vendor/odm/lib/libtinyalsa.so
+@@ -0,0 +1 @@
++/apex/com.android.vndk.v30/lib/libtinyalsa.so
+\ No newline at end of file
+diff --git a/sparse/system/vendor/odm/lib64/android.hardware.power-V1-ndk_platform.so b/sparse/system/vendor/odm/lib64/android.hardware.power-V1-ndk_platform.so
+new file mode 120000
+index 0000000..b6bafb7
+--- /dev/null
++++ b/sparse/system/vendor/odm/lib64/android.hardware.power-V1-ndk_platform.so
+@@ -0,0 +1 @@
++/apex/com.android.vndk.v30/lib64/android.hardware.power-V1-ndk_platform.so
+\ No newline at end of file
+diff --git a/sparse/system/vendor/odm/lib64/libandroidicu.so b/sparse/system/vendor/odm/lib64/libandroidicu.so
+new file mode 120000
+index 0000000..91a94ea
+--- /dev/null
++++ b/sparse/system/vendor/odm/lib64/libandroidicu.so
+@@ -0,0 +1 @@
++/apex/com.android.art/lib64/libandroidicu.so
+\ No newline at end of file
+diff --git a/sparse/system/vendor/odm/lib64/libaudioroute.so b/sparse/system/vendor/odm/lib64/libaudioroute.so
+new file mode 120000
+index 0000000..f7d8fec
+--- /dev/null
++++ b/sparse/system/vendor/odm/lib64/libaudioroute.so
+@@ -0,0 +1 @@
++/apex/com.android.vndk.v30/lib64/libaudioroute.so
+\ No newline at end of file
+diff --git a/sparse/system/vendor/odm/lib64/libbase.so b/sparse/system/vendor/odm/lib64/libbase.so
+new file mode 120000
+index 0000000..c6146dd
+--- /dev/null
++++ b/sparse/system/vendor/odm/lib64/libbase.so
+@@ -0,0 +1 @@
++/apex/com.android.vndk.v30/lib64/libbase.so
+\ No newline at end of file
+diff --git a/sparse/system/vendor/odm/lib64/libcutils.so b/sparse/system/vendor/odm/lib64/libcutils.so
+new file mode 120000
+index 0000000..86d0125
+--- /dev/null
++++ b/sparse/system/vendor/odm/lib64/libcutils.so
+@@ -0,0 +1 @@
++/apex/com.android.vndk.v30/lib64/libcutils.so
+\ No newline at end of file
+diff --git a/sparse/system/vendor/odm/lib64/libicui18n.so b/sparse/system/vendor/odm/lib64/libicui18n.so
+new file mode 120000
+index 0000000..a40fc0d
+--- /dev/null
++++ b/sparse/system/vendor/odm/lib64/libicui18n.so
+@@ -0,0 +1 @@
++/apex/com.android.art/lib64/libicui18n.so
+\ No newline at end of file
+diff --git a/sparse/system/vendor/odm/lib64/libicuuc.so b/sparse/system/vendor/odm/lib64/libicuuc.so
+new file mode 120000
+index 0000000..b793af7
+--- /dev/null
++++ b/sparse/system/vendor/odm/lib64/libicuuc.so
+@@ -0,0 +1 @@
++/apex/com.android.art/lib64/libicuuc.so
+\ No newline at end of file
+diff --git a/sparse/system/vendor/odm/lib64/libnativehelper.so b/sparse/system/vendor/odm/lib64/libnativehelper.so
+new file mode 120000
+index 0000000..af852a5
+--- /dev/null
++++ b/sparse/system/vendor/odm/lib64/libnativehelper.so
+@@ -0,0 +1 @@
++/apex/com.android.art/lib64/libnativehelper.so
+\ No newline at end of file
+diff --git a/sparse/system/vendor/odm/lib64/libtinyalsa.so b/sparse/system/vendor/odm/lib64/libtinyalsa.so
+new file mode 120000
+index 0000000..0572756
+--- /dev/null
++++ b/sparse/system/vendor/odm/lib64/libtinyalsa.so
+@@ -0,0 +1 @@
++/apex/com.android.vndk.v30/lib64/libtinyalsa.so
+\ No newline at end of file
+-- 
+2.44.0
+

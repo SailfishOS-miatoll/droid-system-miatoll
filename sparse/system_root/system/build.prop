@@ -110,3 +110,8 @@ ro.lineage.display.version=18.1-20220902-NIGHTLY-miatoll
 ro.lineage.build.version.plat.sdk=9
 ro.lineage.build.version.plat.rev=0
 
+# Zygote HideCrash Fix
+ro.zygote.disable_gl_preload=1
+
+# Graphics
+graphics.gpu.profiler.support=true
